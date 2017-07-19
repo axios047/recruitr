@@ -13,9 +13,7 @@ Before installation of the project, you need to have the following softwares ins
     - `pip install celery`
 - [Redis](https://redis.io/)
     - Ubuntu/Debian: `sudo apt-get install redis-server`
-- [Docker](https://www.docker.com/)
-    - Complete install instruction [here](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-docker-ce).
-
+    - Windows: `go here (https://github.com/ServiceStack/redis-windows) and download the redis-latest.zip and the run redis-server.exe`
 ### Setting up environment
 
 For setting up the project and running the server:
@@ -27,7 +25,8 @@ For setting up the project and running the server:
     ```
     cd recruitr
     virtualenv venv
-    source venv/bin/activate  # run this command everytime before working on project
+    source venv/bin/activate # run this command everytime before working on project
+    venv\Scripts\activate.bat #Windows
     pip install -r requirements.txt
     ```
 
